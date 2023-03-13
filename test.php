@@ -58,6 +58,7 @@ echo "Le reste de la soustraction $nbr2 et $nbr1 est égale à $total.<br>";
     for ($i=0; $i < strlen($result) ; $i++) { 
        echo "$i<br>";
     };
+
     function replaceCharacters($myWord) {
         $myWord = str_replace("a", "@", $myWord);
         $myWord = str_replace("e", "3", $myWord);
@@ -69,7 +70,50 @@ echo "Le reste de la soustraction $nbr2 et $nbr1 est égale à $total.<br>";
       // Exemple d'utilisation
       $original = "Bonjour tout le mond bearnard est cool";
       $modify = replaceCharacters($original);
-      echo $modify; 
+      echo"$modify<br>"; 
 
+      $stack = array("orange", "banana");
+      array_push($stack, "apple", "raspberry");
+      print_r($stack);
+
+
+      //tab vide
+    $tab = [];
+    $tab2 = [1,'texte',8,9,true,'mot'];
+    //affiche le contenu
+    echo $tab2[2];
+    //ajouter une colonne 
+    $tab2[10] = 55;
+    //remplacer la valeur d'une colonne
+    $tab2[3] = 19;
+    //ajouter à la fin d'un tableau
+    $tab[]= 'ajout';
+
+    //tableau associatif
+    $tabUser = ['Nom'=> 'Mithridate', 'Prenom' => 'Mathieu', 'Entreprise'=> 'Adrar'];
+    //afficher le contenu de la colonne prenom
+    echo $tabUser['Prenom'];
+    //remplacer le contenu de la colonne prenom
+    $tabUser['Prenom'] = 'Romain';
+    //ajouter une colonne
+    $tabUser[] = ['test'=>''];
+
+//     Ajouter le tableau suivant dans une page php :
+// $tab = [12,42,36,48,55,87,1,59,48,36,73,49],
+// afficher la somme des colonnes du tableau en utilisant une boucle,
+// Bonus utiliser une fonction native de PHP,
+
+
+// Calculer le nombre de colonnes
+$tab = [12, 42, 36, 48, 55, 87, 1, 59, 48, 36, 73, 49];
+$somme = array_sum($tab);
+echo $somme; 
+$little = min($tab);
+echo "<h5>$little<h5>"
 ?>
+
+
+
+
+
 
