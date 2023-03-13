@@ -56,8 +56,20 @@ echo "Le reste de la soustraction $nbr2 et $nbr1 est égale à $total.<br>";
     echo $result; 
     //strlen c'est l'équibalent de length en javascript
     for ($i=0; $i < strlen($result) ; $i++) { 
-       echo $i;
+       echo "$i<br>";
     };
-    
+    function replaceCharacters($myWord) {
+        $myWord = str_replace("a", "@", $myWord);
+        $myWord = str_replace("e", "3", $myWord);
+        $myWord = str_replace("i", "1", $myWord);
+        $myWord = str_replace("o", "0", $myWord);
+        return $myWord;
+      }
+      
+      // Exemple d'utilisation
+      $original = "Bonjour tout le mond bearnard est cool";
+      $modify = replaceCharacters($original);
+      echo $modify; 
+
 ?>
 
