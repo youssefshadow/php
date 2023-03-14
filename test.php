@@ -108,12 +108,25 @@ echo "Le reste de la soustraction $nbr2 et $nbr1 est égale à $total.<br>";
 $tab = [12, 42, 36, 48, 55, 87, 1, 59, 48, 36, 73, 49];
 $somme = array_sum($tab);
 echo $somme; 
+
 $little = min($tab);
-echo "<h5>$little<h5>"
+echo "<h5>$little<h5>";
+
+ //tableau de nombres
+ $tab2 = [12,42,36,48,55,87,8,59,48,36,3,49];
+ //variable pour stocker la valeur moyenne
+ $sum = 0;
+ //boucle pour ajouter les valeurs à la $sum
+ foreach($tab2 as $value){
+     $sum += $value;
+ }
+ $moy = $sum/count($tab2);
+ //affichage de la valeur moyenne
+ echo 'la valeur moyenne du tableau égale à : '.$moy.'<br>';
+
+ //version avec méthode native php
+ echo 'la valeur moyenne du tableau égale à : '.(array_sum($tab2)/count($tab2)).'<br>';
 ?>
-
-
-
 
 
 
