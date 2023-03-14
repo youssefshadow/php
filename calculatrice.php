@@ -1,6 +1,6 @@
 
 <?php
-function calcul(int $nbr1, int $nbr2, string $operator) {
+function calcul(int $nbr1, int $nbr2, string $operator):void {
   switch ($operator) {
     case '+':
       echo $nbr1 + $nbr2;
@@ -22,12 +22,12 @@ function calcul(int $nbr1, int $nbr2, string $operator) {
       }
       break;
     default:
-      echo "Opérateur non valide <hr>";
+      echo "Opérateur non valide ,Change le dépêche toi <hr>";
   }
 }
 
 calcul(4,5,'+');
 calcul(4,0,'/');
 calcul(4,9,'*');
+calcul('4',9,'-');
 ?>
-
